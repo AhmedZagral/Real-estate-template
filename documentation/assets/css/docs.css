@@ -1,0 +1,83 @@
+/* documentation/assets/css/docs.css */
+
+:root {
+    --bg: #050716;
+    --bg-alt: #0b0f24;
+    --text: #f4f7ff;
+    --text-muted: #a0a6c6;
+    --accent: #00e0ff;
+    --border: rgba(255, 255, 255, 0.12);
+    --radius: 14px;
+    --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-sans);
+    background: radial-gradient(circle at top, #141a3d 0, #050716 50%);
+    color: var(--text);
+}
+
+.docs-header {
+    padding: 2.5rem 0 1.8rem 0;
+    border-bottom: 1px solid var(--border);
+    background: radial-gradient(circle at top left, rgba(0, 224, 255, 0.28), rgba(5, 7, 26, 0.96));
+}
+
+.docs-container {
+    width: min(920px, 100% - 3rem);
+    margin-inline: auto;
+}
+
+.docs-header h1 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.9rem;
+}
+
+.docs-header p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.docs-section {
+    margin-top: 2rem;
+    padding: 1.4rem 1.3rem;
+    border-radius: var(--radius);
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.04), rgba(5, 6, 26, 0.96));
+    border: 1px solid var(--border);
+}
+
+.docs-section h2 {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.docs-section pre {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 0.9rem 1rem;
+    overflow-x: auto;
+    font-size: 0.85rem;
+}
+
+.docs-section code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.docs-section ul {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 720px) {
+    .docs-container {
+        width: min(100% - 2rem);
+    }
+}
