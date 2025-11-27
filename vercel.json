@@ -1,0 +1,38 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/main-files/index.html"
+    },
+    {
+      "source": "/about",
+      "destination": "/main-files/about.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/main-files/services.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/main-files/contact.html"
+    },
+    {
+      "source": "/blog",
+      "destination": "/main-files/blog.html"
+    },
+    {
+      "source": "/blog-single",
+      "destination": "/main-files/blog-single.html"
+    },
+    {
+      "source": "/assets/:path*",
+      "destination": "/assets/:path*"
+    },
+    {
+      "source": "/documentation",
+      "destination": "/documentation/index.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
